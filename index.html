@@ -35,7 +35,7 @@
           </li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <a id="loginButton">
             <span class="fa fa-sign-in-alt"></span> Login
           </a>
         </span>
@@ -43,6 +43,7 @@
     </div>
   </nav>
 
+  <!-- LOGIN BUTTON MODAL START -->
   <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
@@ -84,6 +85,7 @@
       </div>
     </div>
   </div>
+  <!-- LOGIN BUTTON MODAL END -->
 
   <!-- RESERVE BUTTON MODAL -->
   <div id="reserveModal" class="modal fade" role="dialog">
@@ -208,8 +210,8 @@
 
 
         <div class="reserve-button-div col-12 col-sm-3">
-          <a href="" data-toggle="modal" data-target="#reserveModal"><button type="button"
-              class="reserve-button btn btn-warning" data-placement="bottom">Reserve Table</button></a>
+          <a id="reserveButton"><button type="button" class="reserve-button btn btn-warning">Reserve
+              Table</button></a>
         </div>
       </div>
     </div>
@@ -270,7 +272,7 @@
             <span class="carousel-control-next-icon"></span>
           </a>
 
-          
+
 
 
         </div>
@@ -497,6 +499,13 @@
 
   <script>
     $(document).ready(function () {
+      $('#reserveButton').click(function () {
+        $('#reserveModal').modal('show');
+      });
+      $('#loginButton').click(function () {
+        $('#loginModal').modal('show');
+      });
+
       $('#mycarousel').carousel({
         interval: 2000
       });
@@ -511,6 +520,8 @@
           $("#carouselButton").children("span").addClass('fa-pause');
         }
       });
+
+
     });
   </script>
 </body>

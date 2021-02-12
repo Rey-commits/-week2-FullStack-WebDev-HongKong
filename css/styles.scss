@@ -75,7 +75,7 @@ body{
     z-index: 1;
 }
 
-
+// CSS STYLES ADDED BY ME
 .copyright {
   padding: 40px 0 35px 0;
 }
@@ -105,4 +105,27 @@ body{
   /* Added */
   margin-bottom: 10px;
   /* Added */
+}
+
+
+/* MODAL STYLES STARTS HERE */
+
+.modal-header {
+    background-color: $background-dark;
+
+    button {
+        color: floralwhite;
+    }
+}
+
+.modal-title {
+    color: floralwhite;
+}
+
+.modal-body {
+    background-color: $background-pale;
+}
+
+.modal-footer {
+    background-color: $background-light;
 }

@@ -82,3 +82,23 @@ body {
   /* Added */
   margin-bottom: 10px;
   /* Added */ }
+
+
+
+
+
+  /* MODAL STYLES STARTS HERE */
+
+.modal-header {
+  background-color: #512DA8; }
+  .modal-header button {
+    color: floralwhite; }
+
+.modal-title {
+  color: floralwhite; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
+.modal-footer {
+  background-color: #9575CD; }
